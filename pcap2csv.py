@@ -1,13 +1,9 @@
-#!/usr/bin/python2.7
-# -*- coding: utf-8 -*-
-
 from __future__ import division
 
 import argparse, re, dpkt, sys
-from subprocess import Popen, PIPE, call
 import pandas as ps
 import numpy as np
-
+from nfstream import NFStreamer
 
 # Полный список характеристик потока:
 FEATURES = [
@@ -58,13 +54,29 @@ FEATURES = [
 def ip_from_string(ips):
     '''
         Преобразовать символьное представление IP-адреса
-        в четырёхбайтную строку.
+        в число по основанию 10.
         Аргументы:
             ips - IP-адрес в виде строки (например: '10.0.0.1')
         Возвращает:
-            строку из 4 байт
+            числовое представление IP адреса
     '''
-    return "".join(chr(int(n)) for n in ips.split("."))
+    ip = 0
+    i = 0
+    for n in ips.split("."):
+        ip = (ip << (i*8)) | int(n)
+        i += 1
+    return ip
+
+def ip_from_bytes(ips):
+    '''
+        Преобразовать битоовый массив в число по основанию 10
+    '''
+    ip = 0
+    i = 0
+    for n in ips:
+        ip = (ip << (i*8)) | int(n)
+        i += 1
+    return ip
 
 def parse_flows(pcapfile):
     '''
@@ -82,13 +94,21 @@ def parse_flows(pcapfile):
             )
     '''
 
-    pipe = Popen(["ndpiReader", "-i", pcapfile, "-v2"], stdout=PIPE)
-    raw = pipe.communicate()[0].decode("utf-8")
-    reg = re.compile(r'(UDP|TCP) (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):(\d{1,5}) <-> (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):(\d{1,5}) \[proto: [\d+\.]*\d+\/(\w+\.?\w+)*\]')
+    s = NFStreamer(source=pcapfile, statistical_analysis=True, splt_analysis=10)
+    raw=s.to_pandas()
     flows = {}
     apps = {}
-    for captures in re.findall(reg, raw):
-        transp_proto, ip1, port1, ip2, port2, app_proto = captures
+    for index, row in raw.iterrows():
+        transp_proto = "tcp" if row["protocol"] == 6 else "udp"
+        if transp_proto not in ["tcp", "udp"]:
+            continue
+        if row["ip_version"] != 4:
+            continue
+        ip1 = row["src_ip"]
+        port1 = row["src_port"]
+        ip2 = row["dst_ip"]
+        port2 = row["dst_port"]
+        app_proto = row["application_name"]
         ip1 = ip_from_string(ip1)
         ip2 = ip_from_string(ip2)
         port1 = int(port1)
@@ -105,6 +125,8 @@ def parse_flows(pcapfile):
         ip = eth.data
         if not isinstance(ip, dpkt.ip.IP):
             continue
+        if not ip.v == 4:
+            continue
         seg = ip.data
         if isinstance(seg, dpkt.tcp.TCP):
             transp_proto = "tcp"
@@ -112,15 +134,14 @@ def parse_flows(pcapfile):
             transp_proto = "udp"
         else:
             continue
-        key = (transp_proto, frozenset(((ip.src, seg.sport),
-            (ip.dst, seg.dport))))
+        key = (transp_proto, frozenset(((ip_from_bytes(ip.src), seg.sport),
+            (ip_from_bytes(ip.dst), seg.dport))))
         try:
             assert key in flows
         except AssertionError:
-            print repr(ip.src)
+            print(repr(ip.src))
             raise
         flows[key].append(eth)
-
     for key, flow in flows.items():
         yield apps[key][0], apps[key][1], flow
 
@@ -138,6 +159,8 @@ def forge_flow_stats(flow, strip = 0):
             Если в потоке нет хотя бы двух порций данных,
             возвращает None.
     '''
+    if len(flow) == 0:
+        return None
     ip = flow[0].data
     seg = ip.data
     if isinstance(seg, dpkt.tcp.TCP):
@@ -259,7 +282,7 @@ def main():
     flows = {feature: [] for feature in FEATURES}
     for pcapfile in args.file:
         if len(args.file) > 1:
-            print pcapfile
+            print(pcapfile)
         for proto, subproto, flow in parse_flows(pcapfile):
             stats = forge_flow_stats(flow, args.strip)
             if stats:
