@@ -35,7 +35,7 @@ print('Precision: %.3f' % precision_score(test_Y, pred_y, average='micro'))
 print("Recall: %.3f" % recall_score(test_Y, pred_y, average='micro'))
 
 # Random forest
-clf = RandomForestClassifier(max_depth=10)
+clf = RandomForestClassifier(max_depth=5)
 clf.fit(train_X, train_Y)
 pred_y = clf.predict(test_X)
 print("Random forset accuracy:")
