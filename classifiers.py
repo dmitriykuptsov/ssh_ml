@@ -16,6 +16,8 @@ args = parser.parse_args()
 df = pd.read_csv(args.file)
 
 #df = df[["proto", "subproto", "bulk0", "bulk1", "bulk2", "bulk3", "client_bulksize_avg", "server_bulksize_avg"]]
+print("Unique protocols in the dataset")
+print(df["proto"].unique())
 
 train, test = train_test_split(df, test_size=0.3)
 train_X = train.drop(["proto", "subproto"], axis=1)
@@ -26,11 +28,12 @@ test_Y = test["proto"]
 
 # Neural network classifier
 
-ann = MLPClassifier(solver='sgd', hidden_layer_sizes=(10, 5))
+ann = MLPClassifier(solver='sgd', hidden_layer_sizes=(10, 20), activation="logistic")
 ann.fit(train_X, train_Y)
 pred_y = ann.predict(test_X)
 print("Artificial neural network accuracy:")
 print(np.sum(pred_y == test_Y) / len(test_Y))
+print(accuracy_score(test_Y, pred_y))
 print('Precision: %.3f' % precision_score(test_Y, pred_y, average='micro'))
 print("Recall: %.3f" % recall_score(test_Y, pred_y, average='micro'))
 
@@ -40,6 +43,7 @@ clf.fit(train_X, train_Y)
 pred_y = clf.predict(test_X)
 print("Random forset accuracy:")
 print(np.sum(pred_y == test_Y)/len(test_Y))
+print(accuracy_score(test_Y, pred_y))
 print('Precision: %.3f' % precision_score(test_Y, pred_y, average='micro'))
 print("Recall: %.3f" % recall_score(test_Y, pred_y, average='micro'))
 
@@ -49,6 +53,7 @@ model.fit(train_X, train_Y)
 pred_y = model.predict(test_X)
 print("Naive Bayes accuracy:")
 print(np.sum(pred_y == test_Y)/len(test_Y))
+print(accuracy_score(test_Y, pred_y))
 print('Precision: %.3f' % precision_score(test_Y, pred_y, average='micro'))
 print("Recall: %.3f" % recall_score(test_Y, pred_y, average='micro'))
 
@@ -58,6 +63,7 @@ clf.fit(train_X, train_Y)
 pred_y = clf.predict(test_X)
 print("SVM accuracy:")
 print(np.sum(pred_y == test_Y)/len(test_Y))
+print(accuracy_score(test_Y, pred_y))
 print('Precision: %.3f' % precision_score(test_Y, pred_y, average='micro'))
 print("Recall: %.3f" % recall_score(test_Y, pred_y, average='micro'))
 # SVM
@@ -66,5 +72,6 @@ clf.fit(train_X, train_Y)
 pred_y = clf.predict(test_X)
 print("SVM accuracy:")
 print(np.sum(pred_y == test_Y)/len(test_Y))
+print(accuracy_score(test_Y, pred_y))
 print('Precision: %.3f' % precision_score(test_Y, pred_y, average='micro'))
 print("Recall: %.3f" % recall_score(test_Y, pred_y, average='micro'))
