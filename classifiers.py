@@ -19,7 +19,10 @@ df = pd.read_csv(args.train)
 df2 = pd.read_csv(args.test)
 
 print("Unique protocols in the dataset")
+print("Train dataset")
 print(df["proto"].value_counts())
+print("Test dataset")
+print(df2["proto"].value_counts())
 
 #train, test = train_test_split(df, test_size=0.3)
 
