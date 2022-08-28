@@ -17,7 +17,7 @@ df = pd.read_csv(args.file)
 
 #df = df[["proto", "subproto", "bulk0", "bulk1", "bulk2", "bulk3", "client_bulksize_avg", "server_bulksize_avg"]]
 print("Unique protocols in the dataset")
-print(df["proto"].unique())
+print(df["proto"].value_counts())
 
 train, test = train_test_split(df, test_size=0.3)
 train_X = train.drop(["proto", "subproto"], axis=1)
