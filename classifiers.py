@@ -11,20 +11,25 @@ import numpy as np
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-f", "--file", help="features file")
-args = parser.parse_args()
-df = pd.read_csv(args.file)
+parser.add_argument("-t", "--train", help="features file")
+parser.add_argument("-f", "--test", help="features file")
 
-#df = df[["proto", "subproto", "bulk0", "bulk1", "bulk2", "bulk3", "client_bulksize_avg", "server_bulksize_avg"]]
+args = parser.parse_args()
+df = pd.read_csv(args.train)
+df2 = pd.read_csv(args.test)
+
 print("Unique protocols in the dataset")
 print(df["proto"].value_counts())
 
-train, test = train_test_split(df, test_size=0.3)
-train_X = train.drop(["proto", "subproto"], axis=1)
-train_Y = train["proto"]
+#train, test = train_test_split(df, test_size=0.3)
 
-test_X = test.drop(["proto", "subproto"], axis=1)
-test_Y = test["proto"]
+train_X = df.drop(["proto", "subproto"], axis=1)
+train_Y = df["proto"]
+
+#test_X = test.drop(["proto", "subproto"], axis=1)
+#test_Y = test["proto"]
+test_X = df2.drop(["proto", "subproto"], axis=1)
+test_Y = df2["proto"]
 
 # Neural network classifier
 
