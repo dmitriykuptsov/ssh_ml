@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="SVM.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4681257"
+     inkscape:cx="22.477639"
+     inkscape:cy="289.82532"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="marker2261"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path2259" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path941" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path944" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
+       d="M 34.962377,30.997572 34.601941,85.423543"
+       id="path857"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 25.591019,77.493931 83.621358,77.133494"
+       id="path859"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <circle
+       style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.283001"
+       id="circle1321"
+       cx="42.891994"
+       cy="63.617111"
+       r="2.8834951"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <circle
+       style="fill:#fc0000;fill-opacity:1;stroke:#000000;stroke-width:0.283001"
+       id="circle1327"
+       cx="69.023666"
+       cy="64.698418"
+       r="2.8834951"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <circle
+       style="fill:#fc0000;fill-opacity:1;stroke:#000000;stroke-width:0.283001"
+       id="circle2101"
+       cx="54.786407"
+       cy="49.740288"
+       r="2.8834951"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <circle
+       style="fill:#fc0000;fill-opacity:1;stroke:#000000;stroke-width:0.283001"
+       id="circle2103"
+       cx="74.970871"
+       cy="49.740288"
+       r="2.8834951"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:1.58999992,0.26499999;stroke-dashoffset:0"
+       d="M 38.927185,46.496358 67.041262,76.412621"
+       id="path2138"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 45.234831,43.9733 73.348908,73.889563"
+       id="path2220"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 33.520632,49.560072 61.634709,79.476335"
+       id="path2222"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2261)"
+       d="m 67.041262,76.412621 6.307646,-5.406554"
+       id="path2257"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2261)"
+       d="M 34.782159,77.133494 44.513955,61.45449"
+       id="path2497"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2261)"
+       d="M 34.782159,77.133494 66.500607,66.320389"
+       id="path2499"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 44.513955,61.45449 21.986652,4.865899"
+       id="path2614"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="47.723167"
+       y="60.814533"
+       id="text4568"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan4566"
+         style="stroke-width:0.264583"
+         x="47.723167"
+         y="60.814533">(x - x )</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="55.292347"
+       y="62.481556"
+       id="text8010"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan8008"
+         style="stroke-width:0.264583"
+         x="55.292347"
+         y="62.481556">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="50.336349"
+       y="62.301334"
+       id="text8652"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan8650"
+         style="stroke-width:0.264583"
+         x="50.336349"
+         y="62.301334">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="42.35133"
+       y="68.843445"
+       id="text10557"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan10555"
+         style="stroke-width:0.264583"
+         x="42.35133"
+         y="68.843445">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="43.612869"
+       y="69.924751"
+       id="text11551"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan11549"
+         style="stroke-width:0.264583"
+         x="43.612869"
+         y="69.924751">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="67.041267"
+       y="71.546722"
+       id="text12281"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan12279"
+         style="stroke-width:0.264583"
+         x="67.041267"
+         y="71.546722">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="65.419289"
+       y="70.104973"
+       id="text13865"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan13863"
+         style="stroke-width:0.264583"
+         x="65.419289"
+         y="70.104973">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="74.25"
+       y="70.465416"
+       id="text17212"
+       inkscape:export-filename="C:\Users\dkuptsov\Desktop\SVM.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan17210"
+         style="stroke-width:0.264583"
+         x="74.25"
+         y="70.465416">w</tspan></text>
+  </g>
+</svg>

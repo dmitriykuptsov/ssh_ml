@@ -1,0 +1,10 @@
+PCA explained https://www.youtube.com/watch?v=dhK8nbtii6I
+SVM explained https://www.youtube.com/watch?v=kbGu60QBx2o
+Vector projection https://www.youtube.com/watch?v=X78tLBY3BMk
+Eigenvalues and eigenvectors https://www.youtube.com/watch?v=glaiP222JWA
+Lagrange multipliers https://www.youtube.com/watch?v=6oZT72-nnyI
+Derivative of a matrix https://www.youtube.com/watch?v=e73033jZTCI
+Derivation of the PCA https://www.youtube.com/watch?v=WW3ZJHPwvyg
+Singular Value Decomposition SVD https://www.youtube.com/watch?v=HAJey9-Q8js
+SVD intuitive interpretation https://www.youtube.com/watch?v=WmDnaoY2Ivs&list=PLMrJAkhIeNNSVjnsviglFoY2nXildDCcv&index=4
+Book on machine learning http://databookuw.com/page/page-7/
