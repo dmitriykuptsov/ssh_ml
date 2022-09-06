@@ -10,3 +10,5 @@ SVD intuitive interpretation https://www.youtube.com/watch?v=WmDnaoY2Ivs&list=PL
 Book on machine learning http://databookuw.com/page/page-7/
 Change of basis https://www.youtube.com/watch?v=HZa1RwFHgwU
 Special matrices https://jonathan-hui.medium.com/machine-learning-linear-algebra-special-matrices-c750cd742dfe
+SVD explained https://math.stackexchange.com/questions/411486/understanding-the-singular-value-decomposition-svd
+SVD https://medium.com/@jonathan-hui/machine-learning-singular-value-decomposition-svd-principal-component-analysis-pca-1d45e885e491
