@@ -9,3 +9,4 @@ Singular Value Decomposition SVD https://www.youtube.com/watch?v=HAJey9-Q8js
 SVD intuitive interpretation https://www.youtube.com/watch?v=WmDnaoY2Ivs&list=PLMrJAkhIeNNSVjnsviglFoY2nXildDCcv&index=4
 Book on machine learning http://databookuw.com/page/page-7/
 Change of basis https://www.youtube.com/watch?v=HZa1RwFHgwU
+Special matrices https://jonathan-hui.medium.com/machine-learning-linear-algebra-special-matrices-c750cd742dfe
