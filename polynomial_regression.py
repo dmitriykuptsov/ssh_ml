@@ -21,7 +21,6 @@ plt.show()
 
 x = arange(0, 10, 0.1)
 x = np.array(x)
-
 bias = np.repeat(1, int(10/0.1))
 x1 = np.vstack((x, x*x))
 x2 = np.vstack((x1, x*x*x))
@@ -69,7 +68,22 @@ while abs(epsilon) > 0.0001:
 #print(theta)
 #print(np.dot(np.transpose(theta), [[0, 1], [10, 1]]))
 
+
+x = arange(0, 10, 0.1)
+x = np.array(x)
+x0 = arange(0, 10, 0.1)
+
+bias = np.repeat(1, int(10/0.1))
+x1 = np.vstack((x, x*x))
+x2 = np.vstack((x1, x*x*x))
+x3 = np.vstack((x2, x*x*x*x))
+x4 = np.vstack((x3, bias))
+#x = np.transpose(x4)
+x = x4
+
 plt.plot(arange(0, 10, 0.1), seq)
-#plt.plot([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], np.dot(np.transpose(theta), [[0, 10], [1, 1]]))
+print(x)
+plt.plot(x0, np.dot(np.transpose(theta), x))
+
 plt.show()
 
